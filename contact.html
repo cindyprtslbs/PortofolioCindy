@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Cindy Permatasari Lubis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Blob Background -->
+    <div class="blob-background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Portfolio</a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="resume.html" class="nav-link">Resume</a></li>
+                        <li><a href="portfolio.html" class="nav-link">Projects</a></li>
+                        <li><a href="reflections.html" class="nav-link">Reflections</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-buttons">
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About</a></li>
+            <li><a href="resume.html" class="mobile-nav-link">Resume</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-link">Projects</a></li>
+            <li><a href="reflections.html" class="mobile-nav-link">Reflections</a></li>
+            <li><a href="contact.html" class="mobile-nav-link active">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="contact">
+            <div class="container">
+                <h1 class="section-title gradient-text">Get In Touch</h1>
+                <p class="section-description">Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
+                
+                <div class="contact-content">
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+                            </button>
+                            
+                            <div id="form-status" class="form-status"></div>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <div class="info-section">
+                            <h2>Contact Information</h2>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:cindypermatasarilbs@gmail.com">cindypermatasarilbs@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <a href="tel:+6281262247796">+62 812 6224 7796</a>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <div>
+                                    <h4>WhatsApp</h4>
+                                    <a href="https://wa.me/6281262247796" target="_blank">Chat on WhatsApp</a>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Surabaya, East Java, Indonesia</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h2>Social Media</h2>
+                            <div class="social-buttons">
+                                <a href="https://github.com/cindyprtslbs" target="_blank" class="social-button" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/cindy-permatasari-lubis" target="_blank" class="social-button" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://instagram.com" target="_blank" class="social-button" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://wa.me/6281262247796" target="_blank" class="social-button" aria-label="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h2>Availability</h2>
+                            <p>I'm currently open to:</p>
+                            <ul class="availability-list">
+                                <li><i class="fas fa-check"></i> Internship opportunities</li>
+                                <li><i class="fas fa-check"></i> Freelance projects</li>
+                                <li><i class="fas fa-check"></i> Collaboration on open-source</li>
+                                <li><i class="fas fa-check"></i> Speaking at events</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Cindy Permatasari Lubis. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/cindyprtslbs" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Cindy Lubis</title>
+    <title>About | Cindy Permatasari Lubis</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,8 +27,11 @@
                     <ul class="nav-list">
                         <li><a href="index.html" class="nav-link">Home</a></li>
                         <li><a href="about.html" class="nav-link active">About</a></li>
-                        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                        <!-- <li><a href="contact.html" class="nav-link">Contact</a></li> -->
+                        <!-- Added Resume, Projects, Reflections, and Contact links -->
+                        <li><a href="resume.html" class="nav-link">Resume</a></li>
+                        <li><a href="portfolio.html" class="nav-link">Projects</a></li>
+                        <li><a href="reflections.html" class="nav-link">Reflections</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="header-buttons">
@@ -51,8 +54,11 @@
         <ul class="mobile-nav-list">
             <li><a href="index.html" class="mobile-nav-link">Home</a></li>
             <li><a href="about.html" class="mobile-nav-link active">About</a></li>
-            <li><a href="portfolio.html" class="mobile-nav-link">Portfolio</a></li>
-            <!-- <li><a href="contact.html" class="mobile-nav-link">Contact</a></li> -->
+            <!-- Added Resume, Projects, Reflections, and Contact links -->
+            <li><a href="resume.html" class="mobile-nav-link">Resume</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-link">Projects</a></li>
+            <li><a href="reflections.html" class="mobile-nav-link">Reflections</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
         </ul>
     </div>
 
@@ -64,23 +70,54 @@
                 
                 <div class="about-content">
                     <div class="about-text">
+                        <!-- Enhanced biography with major, interests, and goals -->
+                        <h2>Biography</h2>
                         <p>
-                            Hello! I'm Cindy Permatasari Lubis, an enthusiastic Informatics Engineering undergraduate passionate about UI/UX design and front-end development.</p>
-                        <p>
-                            My journey in tech started with a strong interest in visual design, which led me to explore user interface and user experience design. From there, I’ve been expanding my skills into mobile and web development, aiming to create digital solutions that are both functional and impactful
+                            Hello! I'm Cindy Permatasari Lubis, an enthusiastic Informatics Engineering undergraduate from Universitas Airlangga, passionate about UI/UX design and front-end development.
                         </p>
                         <p>
-                            When I’m not designing or coding, I enjoy swimming, playing guitar, or exploring ideas that bring positive change to my surroundings.
+                            My journey in tech started with a strong interest in visual design, which led me to explore user interface and user experience design. From there, I've been expanding my skills into mobile and web development, aiming to create digital solutions that are both functional and impactful.
                         </p>
+                        
+                        <h3>Major</h3>
+                        <p>Bachelor of Informatics Engineering, Universitas Airlangga (2023 - Present)</p>
+                        
+                        <h3>Interests</h3>
+                        <ul class="interests-list">
+                            <li><i class="fas fa-paint-brush"></i> UI/UX Design</li>
+                            <li><i class="fas fa-mobile-alt"></i> Mobile App Development</li>
+                            <li><i class="fas fa-code"></i> Frontend Development</li>
+                            <li><i class="fas fa-database"></i> Backend Integration</li>
+                            <li><i class="fas fa-swimmer"></i> Swimming</li>
+                            <li><i class="fas fa-guitar"></i> Playing Guitar</li>
+                        </ul>
+                        
+                        <h3>Goals</h3>
+                        <p>
+                            My goal is to become a skilled full-stack developer who can create meaningful digital solutions that positively impact people's lives. I aim to continuously learn emerging technologies and contribute to innovative projects that solve real-world problems.
+                        </p>
+                        
+                        <!-- Added video and LinkedIn links -->
+                        <div class="about-links">
+                            <a href="https://www.linkedin.com/in/cindy-permatasari-lubis" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                            </a>
+                            <a href="#" class="btn btn-outline" id="video-intro-btn">
+                                <i class="fas fa-video"></i> Watch My Introduction
+                            </a>
+                        </div>
 
                         <div class="skills">
                             <h2>Skills</h2>
                             <div class="skill-tags">
                                 <span class="skill-tag">HTML</span>
                                 <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">JavaScript</span>
                                 <span class="skill-tag">Java</span>
+                                <span class="skill-tag">Python</span>
                                 <span class="skill-tag">PHP</span>
                                 <span class="skill-tag">Dart</span>
+                                <span class="skill-tag">Go</span>
                                 <span class="skill-tag">Laravel</span>
                                 <span class="skill-tag">Figma</span>
                                 <span class="skill-tag">Bootstrap</span>
@@ -88,12 +125,28 @@
                                 <span class="skill-tag">Wordpress</span>
                                 <span class="skill-tag">Kotlin</span>
                                 <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">MongoDB</span>
                             </div>
                         </div>
                     </div>
                     <div class="about-image">
-                        <div class="profile-image">
-                            <img src="image/cindy.jpg" alt="John Doe">
+                        <!-- Added photo collage -->
+                        <div class="photo-collage">
+                            <div class="profile-image main-photo">
+                                <img src="image/cindy.jpg" alt="Cindy Permatasari Lubis">
+                            </div>
+                            <div class="collage-grid">
+                                <div class="collage-item">
+                                    <img src="/placeholder.svg?height=150&width=150" alt="Workspace">
+                                </div>
+                                <div class="collage-item">
+                                    <img src="/placeholder.svg?height=150&width=150" alt="Campus">
+                                </div>
+                                <div class="collage-item">
+                                    <img src="/placeholder.svg?height=150&width=150" alt="Team Work">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -105,20 +158,20 @@
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <div class="timeline-date">
-                                <span>2025 - Present</span>
+                                <span>2024 - 2025</span>
                             </div>
                             <div class="timeline-content card">
                                 <div class="card-icon">
-                                    <i class="fas fa-paint-brush"></i>
+                                    <i class="fas fa-chalkboard-teacher"></i>
                                 </div>
                                 <div class="card-header">
                                     <div>
-                                        <h3>Staf Ahli HIMA Teknik Informatika</h3>
-                                        <p class="company"><i class="fas fa-building"></i>Universitas Airlangga.</p>
+                                        <h3>Staff of Educational Department</h3>
+                                        <p class="company"><i class="fas fa-building"></i> HIMA D4 Teknik Informatika, Universitas Airlangga</p>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p>Staff responsible for tutoring and assisting students in academic activities, supporting the organization of events, and contributing to the development of the Informatics Engineering student community.</p>
+                                    <p>Managed the end-to-end execution of a semester exam tutoring program, from planning to implementation, to enhance junior students' mastery of core academic subjects. Monitored attendance and engagement, collecting feedback to evaluate program effectiveness and identify improvement areas.</p>
                                 </div>
                             </div>
                         </div>
@@ -130,45 +183,40 @@
                             </div>
                             <div class="timeline-content card">
                                 <div class="card-icon">
-                                    <i class="fas fa-code"></i>
+                                    <i class="fas fa-handshake"></i>
                                 </div>
                                 <div class="card-header">
                                     <div>
-                                        <h3>Staff Eksternal IKAMABA UNAIR</h3>
-                                        <p class="company"><i class="fas fa-building"></i>Universitas Airlangga.</p>
+                                        <h3>Staff of External Division</h3>
+                                        <p class="company"><i class="fas fa-building"></i> IKAMABA UNAIR, Universitas Airlangga</p>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p>Responsible for managing external affairs of the regional organization, including building partnerships, maintaining communication with external parties, and representing the organization in various external activities and events.</p>
+                                    <p>Initiated and executed a graduation appreciation program to honor senior students for their academic achievements. Designed the event concept, compiled the participant list, and managed logistics and documentation needs.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- <div class="timeline-item">
+                        <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <div class="timeline-date">
-                                <span>2016 - 2018</span>
+                                <span>2024</span>
                             </div>
                             <div class="timeline-content card">
                                 <div class="card-icon">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <i class="fas fa-users"></i>
                                 </div>
                                 <div class="card-header">
                                     <div>
-                                        <h3>Graphic Designer</h3>
-                                        <p class="company"><i class="fas fa-building"></i> Creative Studio</p>
+                                        <h3>Organizing Committee</h3>
+                                        <p class="company"><i class="fas fa-building"></i> Teknovistafest - Web Design Competition</p>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p>Created visual assets for print and digital media. Designed brand identities, marketing materials, and social media graphics for various clients.</p>
-                                    <div class="card-tags">
-                                        <span class="card-tag">Branding</span>
-                                        <span class="card-tag">Illustration</span>
-                                        <span class="card-tag">Print Design</span>
-                                    </div>
+                                    <p>Acted as Time Keeper during the event to ensure that the competition schedule was adhered to, ensuring that each session ran on time and reminding participants to stay punctual. Contributed to the event's promotion through social media management and outreach.</p>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>

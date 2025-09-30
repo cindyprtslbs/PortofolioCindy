@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cindy Lubis | Portfolio</title>
+    <title>Cindy Permatasari Lubis | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,8 +27,11 @@
                     <ul class="nav-list">
                         <li><a href="index.html" class="nav-link active">Home</a></li>
                         <li><a href="about.html" class="nav-link">About</a></li>
-                        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                        <!-- <li><a href="contact.html" class="nav-link">Contact</a></li> -->
+                        <!-- Added Resume, Projects, Reflections, and Contact links -->
+                        <li><a href="resume.html" class="nav-link">Resume</a></li>
+                        <li><a href="portfolio.html" class="nav-link">Projects</a></li>
+                        <li><a href="reflections.html" class="nav-link">Reflections</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="header-buttons">
@@ -51,8 +54,11 @@
         <ul class="mobile-nav-list">
             <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
             <li><a href="about.html" class="mobile-nav-link">About</a></li>
-            <li><a href="portfolio.html" class="mobile-nav-link">Portfolio</a></li>
-            <!-- <li><a href="contact.html" class="mobile-nav-link">Contact</a></li> -->
+            <!-- Added Resume, Projects, Reflections, and Contact links -->
+            <li><a href="resume.html" class="mobile-nav-link">Resume</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-link">Projects</a></li>
+            <li><a href="reflections.html" class="mobile-nav-link">Reflections</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
         </ul>
     </div>
 
@@ -61,14 +67,45 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
+                    <!-- Added animated floating elements -->
+                    <div class="floating-elements">
+                        <div class="floating-icon" style="--delay: 0s; --duration: 3s;">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 0.5s; --duration: 4s;">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 1s; --duration: 3.5s;">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 1.5s; --duration: 4.5s;">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                    </div>
+                    
                     <h1 class="hero-title">
-                        <span class="subtitle">HEY, I'M</span>
-                        <span class="gradient-text main-title">Cindy Permatasari Lubis</span>
+                        <span class="subtitle fade-in">HEY, I'M</span>
+                        <span class="gradient-text main-title slide-up">Cindy Permatasari Lubis</span>
                     </h1>
-                    <p class="hero-description">
+                    
+                    <!-- Added profile image with animation -->
+                    <div class="hero-image-container">
+                        <div class="hero-profile-image">
+                            <img src="image/cindy.jpg" alt="Cindy Permatasari Lubis">
+                        </div>
+                    </div>
+                    
+                    <!-- Added quote section -->
+                    <div class="hero-quote fade-in-delay">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Building digital experiences that make a difference, one line of code at a time."</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    
+                    <p class="hero-description fade-in-delay-2">
                         An undergraduate Informatics Engineering student passionate about building user-centered digital experiences. I enjoy learning new technologies, solving real-world problems through code, and contributing to collaborative projects. Currently exploring UI/UX design, mobile app development, and backend integration.
                     </p>
-                    <div class="hero-buttons">
+                    <div class="hero-buttons fade-in-delay-3">
                         <a href="portfolio.html" class="btn btn-primary">
                             See my projects <i class="fas fa-arrow-right"></i>
                         </a>
