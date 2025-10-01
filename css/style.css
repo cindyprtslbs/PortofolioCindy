@@ -366,7 +366,7 @@ main {
 
 .hero-title .main-title {
   display: block;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
   background: var(--gradient-text);
   -webkit-background-clip: text;
