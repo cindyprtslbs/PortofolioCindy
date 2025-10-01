@@ -68,75 +68,94 @@
                 <p class="section-description">Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
                 
                 <div class="contact-content">
-                    <div class="contact-form-container">
-                        <form id="contact-form" class="contact-form">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary btn-block">
-                                <span>Send Message</span> <i class="fas fa-paper-plane"></i>
-                            </button>
-                            
-                            <div id="form-status" class="form-status"></div>
-                        </form>
+                    <!-- Improved form container with better card styling -->
+                    <div class="contact-form-wrapper">
+                        <div class="contact-form-card">
+                            <h2 class="form-title">Send Me a Message</h2>
+                            <form id="contact-form" class="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Name <span class="required">*</span></label>
+                                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">Subject <span class="required">*</span></label>
+                                    <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Message <span class="required">*</span></label>
+                                    <textarea id="message" name="message" rows="6" placeholder="Tell me more about your inquiry..." required></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+                                </button>
+                                
+                                <div id="form-status" class="form-status"></div>
+                            </form>
+                        </div>
                     </div>
                     
+                    <!-- Improved contact info section with better card styling -->
                     <div class="contact-info">
-                        <div class="info-section">
-                            <h2>Contact Information</h2>
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                <i class="fas fa-address-book"></i>
+                                <h2>Contact Information</h2>
+                            </div>
                             
                             <div class="info-item">
-                                <i class="fas fa-envelope"></i>
-                                <div>
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-content">
                                     <h4>Email</h4>
                                     <a href="mailto:cindypermatasarilbs@gmail.com">cindypermatasarilbs@gmail.com</a>
                                 </div>
                             </div>
                             
                             <div class="info-item">
-                                <i class="fas fa-phone"></i>
-                                <div>
+                                <div class="info-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="info-content">
                                     <h4>Phone</h4>
                                     <a href="tel:+6281262247796">+62 812 6224 7796</a>
                                 </div>
                             </div>
                             
                             <div class="info-item">
-                                <i class="fab fa-whatsapp"></i>
-                                <div>
+                                <div class="info-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="info-content">
                                     <h4>WhatsApp</h4>
                                     <a href="https://wa.me/6281262247796" target="_blank">Chat on WhatsApp</a>
                                 </div>
                             </div>
                             
                             <div class="info-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div>
+                                <div class="info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info-content">
                                     <h4>Location</h4>
                                     <p>Surabaya, East Java, Indonesia</p>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="info-section">
-                            <h2>Social Media</h2>
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                <i class="fas fa-share-alt"></i>
+                                <h2>Social Media</h2>
+                            </div>
                             <div class="social-buttons">
                                 <a href="https://github.com/cindyprtslbs" target="_blank" class="social-button" aria-label="GitHub">
                                     <i class="fab fa-github"></i>
@@ -144,7 +163,7 @@
                                 <a href="https://linkedin.com/in/cindy-permatasari-lubis" target="_blank" class="social-button" aria-label="LinkedIn">
                                     <i class="fab fa-linkedin"></i>
                                 </a>
-                                <a href="https://instagram.com" target="_blank" class="social-button" aria-label="Instagram">
+                                <a href="https://www.instagram.com/sinnnn__dyy" target="_blank" class="social-button" aria-label="Instagram">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                                 <a href="https://wa.me/6281262247796" target="_blank" class="social-button" aria-label="WhatsApp">
@@ -153,14 +172,17 @@
                             </div>
                         </div>
                         
-                        <div class="info-section">
-                            <h2>Availability</h2>
-                            <p>I'm currently open to:</p>
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                <i class="fas fa-calendar-check"></i>
+                                <h2>Availability</h2>
+                            </div>
+                            <p class="availability-intro">I'm currently open to:</p>
                             <ul class="availability-list">
-                                <li><i class="fas fa-check"></i> Internship opportunities</li>
-                                <li><i class="fas fa-check"></i> Freelance projects</li>
-                                <li><i class="fas fa-check"></i> Collaboration on open-source</li>
-                                <li><i class="fas fa-check"></i> Speaking at events</li>
+                                <li><i class="fas fa-check-circle"></i> Internship opportunities</li>
+                                <li><i class="fas fa-check-circle"></i> Freelance projects</li>
+                                <li><i class="fas fa-check-circle"></i> Collaboration on open-source</li>
+                                <li><i class="fas fa-check-circle"></i> Speaking at events</li>
                             </ul>
                         </div>
                     </div>
@@ -178,10 +200,10 @@
                     <a href="https://github.com/cindyprtslbs" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <a href="https://linkedin.com/in/cindy-permatasari-lubis" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <a href="https://www.instagram.com/sinnnn__dyy" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </div>
