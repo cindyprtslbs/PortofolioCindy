@@ -405,7 +405,6 @@ section {
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: var(--spacing-md);
   background: var(--gradient-text);
   -webkit-background-clip: text;
   background-clip: text;
