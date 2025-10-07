@@ -415,7 +415,7 @@ main {
 }
 
 .hero-quote {
-  max-width: 600px;
+  max-width: 800px;
   margin: var(--spacing-sm) 0; 
   padding: var(--spacing-lg);
   background: rgba(138, 43, 226, 0.05);
@@ -1842,6 +1842,72 @@ section {
 .btn-block {
   width: 100%;
 }
+.social-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  font-size: 1.25rem;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.social-button:hover {
+  background: var(--color-primary);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .social-buttons {
+    justify-content: center;
+  }
+}
+
+/* Footer */
+.footer {
+  background: var(--color-secondary);
+  color: var(--color-muted);
+  text-align: center;
+  padding: var(--spacing-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.footer p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
 
 /* Smaller mobile size for the square card */
 @media (max-width: 576px) {
