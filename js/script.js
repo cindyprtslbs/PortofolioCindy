@@ -107,7 +107,7 @@ function setActiveNavLink() {
 
 document.addEventListener("DOMContentLoaded", () => {
   const typingText = document.querySelector(".typing-text");
-  const text = "I'm a Web Developer";
+  const text = "I'm a Web Developer.";
   let index = 0;
   let isDeleting = false;
   const typingSpeed = 100;  // kecepatan mengetik
