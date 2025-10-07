@@ -1,30 +1,9 @@
 // DOM Elements
 const header = document.querySelector(".header")
-const themeToggle = document.querySelector(".theme-toggle")
 const mobileMenuToggle = document.querySelector(".mobile-menu-toggle")
 const mobileMenu = document.querySelector(".mobile-menu")
 const contactForm = document.getElementById("contact-form")
 const formStatus = document.getElementById("form-status")
-
-// Check for saved theme preference or use system preference
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)")
-const currentTheme = localStorage.getItem("theme")
-
-if (currentTheme === "dark" || (!currentTheme && prefersDarkScheme.matches)) {
-  document.body.classList.add("dark-mode")
-}
-
-// Theme Toggle Functionality
-themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode")
-
-  // Save theme preference
-  if (document.body.classList.contains("dark-mode")) {
-    localStorage.setItem("theme", "dark")
-  } else {
-    localStorage.setItem("theme", "light")
-  }
-})
 
 // Mobile Menu Toggle
 mobileMenuToggle.addEventListener("click", () => {
@@ -125,6 +104,52 @@ function setActiveNavLink() {
   setActive(navLinks)
   setActive(mobileNavLinks)
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const typingText = document.querySelector(".typing-text");
+  const text = "I'm a Web Developer";
+  let index = 0;
+  let isDeleting = false;
+  const typingSpeed = 100;  // kecepatan mengetik
+  const deletingSpeed = 60; // kecepatan menghapus
+  const delayAfterTyping = 1500; // jeda setelah selesai mengetik
+  const delayAfterDeleting = 500; // jeda setelah hapus
+
+  function type() {
+    if (!isDeleting && index < text.length) {
+      typingText.textContent = text.substring(0, index + 1);
+      index++;
+      setTimeout(type, typingSpeed);
+    } 
+    else if (isDeleting && index > 0) {
+      typingText.textContent = text.substring(0, index - 1);
+      index--;
+      setTimeout(type, deletingSpeed);
+    } 
+    else {
+      // Saat selesai mengetik atau selesai menghapus
+      isDeleting = !isDeleting;
+      const delay = isDeleting ? delayAfterTyping : delayAfterDeleting;
+      setTimeout(type, delay);
+    }
+  }
+
+  type();
+});
+
+// Fade-in scroll animation
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show")
+    }
+  })
+})
+
+// Apply to all elements with fade-in-up
+document.querySelectorAll(".fade-in-up").forEach((el) => observer.observe(el))
+
+
 
 // Call on page load
 setActiveNavLink()
